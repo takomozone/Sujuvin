@@ -1,0 +1,136 @@
+@import 'tailwindcss';@import 'tw-animate-css';@import 'shadcn/tailwind.css';
+:root{--background:#fff;--foreground:#202320;--primary:#f7d431;--primary-foreground:#202320;--border:#e4e5e0;--input:#ddd;--ring:#b19712;--radius:.6rem;--muted:#f5f5f1;--muted-foreground:#74786e}*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#202320;background:#f8f9f6}button,input{font:inherit}button{cursor:pointer}button:focus-visible,a:focus-visible{outline:3px solid #b19712;outline-offset:4px}header{height:86px;display:flex;align-items:center;padding:0 36px;border-bottom:1px solid #e3e5df;background:white;gap:30px}.logo{display:flex;align-items:center;font-size:32px;font-weight:800;text-decoration:none;color:#202320;letter-spacing:-1.4px}.logo>span:first-child{background:#f7d431;border-radius:13px;padding:9px;margin-right:11px}.dot{color:#c8aa16}.header-place{margin-left:auto;display:flex;gap:8px;align-items:center;font-size:14px}.demo{font-size:12px;letter-spacing:1px;border:1px solid #dedfd8;padding:9px 12px;border-radius:30px;color:#71766b}main{display:grid;grid-template-columns:400px 1fr;min-height:calc(100vh - 86px)}aside{background:white;padding:40px 30px 20px;display:flex;flex-direction:column;border-right:1px solid #e4e5e0}.eyebrow{font-size:12px;letter-spacing:1.9px;color:#7c8273;font-weight:700}h1{font-size:38px;line-height:1.12;letter-spacing:-1.5px;margin:17px 0}.intro{color:#74796e;font-size:16px;line-height:1.65;margin:0 0 27px}.field{display:flex;gap:14px;align-items:center;background:#f6f7f3;border:1px solid #e8eae3;border-radius:12px;padding:15px;margin-bottom:12px}.field>div{flex:1;min-width:0}.field label{font-size:11px;letter-spacing:1.3px;color:#7c8175;display:block;font-weight:700;margin-bottom:6px}.field strong{font-size:16px;display:block}.field small{font-size:13px;color:#7e8378;display:block;margin-top:4px}.field input{background:transparent!important;border:0!important;box-shadow:none!important;width:100%;padding:0;height:28px;font-size:16px;outline-offset:4px}.point{width:14px;height:14px;border:4px solid #252925;border-radius:50%;margin:3px}.primary,.reset{width:100%;display:flex;justify-content:space-between;align-items:center;border:0;border-radius:12px;padding:18px 20px;font-weight:700;margin-top:22px}.primary{background:#f7d431}.primary:hover{background:#edc516}.reset{justify-content:center;gap:8px;background:#f2f3ee}.welcome{display:flex;gap:15px;border-top:1px solid #eceee7;margin-top:32px;padding-top:25px}.yellow-icon{background:#faf1b9;border-radius:13px;width:48px;height:48px;display:grid;place-items:center;flex-shrink:0}.welcome strong{font-size:16px}.welcome p,.driver p{font-size:14px;color:#73796c;line-height:1.6;margin:6px 0}.footnote{display:flex;gap:10px;color:#8b9084;margin-top:auto;padding-top:34px}.footnote svg{flex-shrink:0;margin-top:3px}.footnote p{font-size:12px;line-height:1.65;margin:0}.side-bottom{display:flex;justify-content:space-between;font-size:10px;letter-spacing:.8px;color:#999e92;border-top:1px solid #eee;margin-top:25px;padding-top:18px}.map-panel{position:relative;min-height:650px;isolation:isolate}.map{height:100%;width:100%;position:absolute;inset:0;background:#e8eee4;z-index:0}.map-tag{position:absolute;top:24px;left:24px;z-index:500;background:white;border:1px solid #e2e6db;box-shadow:0 4px 20px #2330160d;border-radius:12px;padding:15px 20px;font-size:11px;letter-spacing:1px;color:#7f8776;display:flex;align-items:center;gap:10px}.map-tag b{color:#30382b;font-size:14px;letter-spacing:0;margin-left:12px}.live{width:7px;height:7px;background:#94a879;border-radius:50%}.recenter{position:absolute;bottom:106px;right:12px;z-index:500;background:#fff;border:1px solid #aaa;border-radius:5px;padding:10px}.map-symbol{background:none;border:0}.marker{width:46px;height:46px;background:#f7d431;border:3px solid white;border-radius:14px;box-shadow:0 5px 18px #24371f45;display:grid;place-items:center;position:relative}.marker.person{background:#232b22;color:white;border-radius:50%}.marker.person span{position:absolute;top:49px;background:white;color:#273020;padding:5px 12px;border-radius:6px;font-size:12px;font-weight:bold;box-shadow:0 3px 10px #0001}.leaflet-marker-icon{transition:opacity 1s}.departing .marker{transform:scale(.75);filter:grayscale(1);transition:all 1s}.map-legend{position:absolute;bottom:30px;left:24px;z-index:500;display:flex;gap:20px;background:#fffffff0;padding:13px 18px;border-radius:9px;font-size:12px}.map-legend span{display:flex;align-items:center;gap:8px}.map-legend i{width:9px;height:9px;border-radius:50%;background:#252d21}.map-legend span+span i{width:20px;height:3px}.toast{position:absolute;top:100px;left:50%;transform:translate(-50%,-15px);opacity:0;pointer-events:none;z-index:700;background:white;border-radius:17px;padding:18px 23px;display:flex;align-items:center;gap:15px;box-shadow:0 16px 45px #1a28132b;transition:opacity .6s,transform .6s;width:max-content;max-width:90%}.toast.show{opacity:1;transform:translate(-50%,0)}.toast strong{font-size:17px}.toast p{font-size:14px;color:#7b8074;margin:5px 0 0}.ride-card{margin-top:25px;border:1px solid #e3e7dd;border-radius:13px;padding:18px;transition:opacity .6s}.ride-card.muted{opacity:.5}.ride-top{display:flex;justify-content:space-between;gap:8px;font-size:13px}.ride-top span{display:flex;align-items:center;gap:6px}.ride-top b{white-space:nowrap;background:#f7d431;padding:4px 6px;border-radius:5px}.driver{display:flex;gap:14px;align-items:center;margin-top:20px}.car-icon{background:#f3f5ef;padding:13px;border-radius:10px}.plate{font-size:12px;border:1px solid #cdd2c7;border-radius:4px;padding:3px 6px;font-weight:700;letter-spacing:1px}.track{height:4px;border-radius:5px;background:#edf0e7;overflow:hidden;margin-top:20px}.track i{display:block;background:#f2c916;height:100%;transition:width .1s linear}.spin{animation:spin 1.4s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}.map-error{position:absolute;bottom:65px;left:24px;z-index:500;background:white;padding:9px;font-size:12px;max-width:70%;border-radius:5px}@media(max-width:850px){main{grid-template-columns:330px 1fr}aside{padding:28px 22px}h1{font-size:32px}.map-tag b{display:none}}@media(max-width:640px){header{height:70px;padding:0 20px}.logo{font-size:27px}.demo{display:none}main{display:flex;flex-direction:column-reverse}.map-panel{height:48vh;min-height:340px}aside{padding:26px 22px}.map-tag{top:12px;left:12px;padding:10px}.map-legend{bottom:24px;left:12px;padding:8px;font-size:11px}.footnote{padding-top:24px}.side-bottom{display:none}.toast{top:70px;padding:13px;width:92%}.toast p{font-size:12px}.welcome{margin-top:23px}.map-error{bottom:60px;left:12px}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}}
+
+/* Animate the inner glyph, leaving Leaflet's positioning transform intact. */
+.marker,.marker.person{background:transparent;border:0;border-radius:0;box-shadow:none;color:#202720}.marker.taxi svg{fill:#f7d431;filter:drop-shadow(0 2px 1px #fff) drop-shadow(0 4px 3px #0003)}.marker.person svg{filter:drop-shadow(0 1px 1px white) drop-shadow(0 2px 2px white)}.marker.person span{top:44px}.leaflet-marker-icon{transition:opacity .2s}.leaflet-marker-icon.departing{transition:opacity 2.6s ease-in-out}.departing .marker{transform:scale(.85);filter:none;transition:transform 2.6s ease-in-out}.arriving .marker{animation:taxi-arrive 1.45s cubic-bezier(.18,.7,.25,1) both}.leaflet-overlay-pane path{transition:stroke-opacity 2.5s ease-in-out}@keyframes taxi-arrive{0%{transform:scale(2.4);opacity:0}20%{transform:scale(2.15);opacity:1}75%{transform:scale(.94);opacity:1}100%{transform:scale(1);opacity:1}}@media(prefers-reduced-motion:reduce){.arriving .marker{animation:none}.leaflet-marker-icon,.departing .marker,.leaflet-overlay-pane path{transition:none}}
+
+/* Solid, professionally drawn silhouettes retain clarity at map scale. */
+.marker.taxi svg{width:48px;height:36px;fill:#f3ce35;stroke:#292e32;stroke-width:12px;stroke-linejoin:round;paint-order:stroke fill;filter:drop-shadow(0 2px 2px #0003)}
+.marker.person svg{width:23px;height:39px;fill:#28313b;stroke:#fff;stroke-width:13px;paint-order:stroke fill;filter:drop-shadow(0 2px 2px #0002)}
+.marker.person span{top:46px;background:#ffffffed;border:1px solid #e5e7e7;box-shadow:0 2px 6px #0000000d;font-weight:600;padding:3px 9px}
+
+.marker.taxi .taxi-art{display:block;width:44px;height:44px;object-fit:contain;transform-origin:50% 50%;will-change:transform;filter:drop-shadow(0 1px 1px #0002);pointer-events:none}
+
+.marker.person .person-art{display:block;width:28px;height:28px;object-fit:contain;filter:drop-shadow(0 1px 1px #fff);pointer-events:none}.marker.person span{top:39px}.map-legend span+span i{height:3px;background:#f7d431;border-top:1px solid #111;border-bottom:1px solid #111;border-radius:0}
+.ride-options{margin-top:25px}.ride-options h2{font-size:19px;margin:0 0 7px}.offer-note{font-size:12px;color:#74796e;line-height:1.6}.ride-option{display:flex;align-items:center;text-align:left;gap:12px;width:100%;border:1px solid #e0e4d8;background:#fff;padding:15px 12px;border-radius:12px;margin-top:10px;transition:background .2s,border-color .2s}.ride-option:hover{background:#fff9db;border-color:#cfb22c}.ride-option>svg{flex-shrink:0}.ride-option>span:first-of-type{flex:1}.ride-option strong{display:block;font-size:15px}.ride-option small{display:block;font-size:12px;color:#74796e;margin-top:5px}.pickup-time{font-size:13px;display:block;margin-top:7px}.offer-price{font-size:18px;font-weight:700;white-space:nowrap}.ride-option.premium{background:#252b26;color:#fff;border-color:#252b26}.ride-option.premium small{color:#d0d4c8}.ride-option em{display:block;font-size:9px;color:#f7d431;font-style:normal;letter-spacing:1px;margin-top:4px}.ride-option.premium:hover{background:#3b4237}.locked-fare{font-size:14px;font-weight:700;margin-top:20px}.locked-fare small{display:block;font-size:12px;color:#7b8173;font-weight:400;margin-top:6px}.fare-dialog{padding:28px!important;max-width:440px!important;background:white!important}.fare-dialog [data-slot=dialog-title]{font-size:25px;font-weight:750}.fare-dialog [data-slot=dialog-description]{font-size:14px;line-height:1.6;color:#6f7666}.receipt-route{display:grid;gap:7px;border-block:1px solid #eee;padding:17px 0}.receipt-route small{font-size:11px;color:#818775;letter-spacing:1px}.receipt-route strong{font-size:16px;margin-bottom:8px;overflow-wrap:anywhere}.final-price{display:flex;justify-content:space-between;align-items:center;background:#f7d431;border-radius:10px;padding:20px 15px}.final-price strong{font-size:30px}.receipt-reopen{position:fixed;bottom:65px;right:65px;z-index:800;background:#f7d431;border:0;border-radius:10px;padding:15px;font-weight:700}.demo-route-label{position:absolute;top:85px;left:24px;z-index:600;background:#fff8d8;padding:8px 12px;border-radius:7px;font-size:12px}.occupied .marker:after{content:'Kyydissä';position:absolute;top:38px;background:#222;color:white;font-size:11px;border-radius:4px;padding:3px 6px}.map-panel .marker.person{transition:opacity .5s}
+
+/* Taxi-change speech bubble: one smooth entrance and exit per handover. */
+.toast{width:420px;max-width:calc(100% - 40px);padding:20px 23px;gap:16px;background:#fff8cf;border:2px solid #242820;border-radius:24px;box-shadow:4px 5px 0 #242820,0 12px 28px #18200f1c;transform:translate(-50%,-14px) scale(.88) rotate(-2deg);transform-origin:50% 100%;opacity:0;transition:opacity .65s ease,transform .7s cubic-bezier(.2,.75,.25,1);will-change:transform,opacity}
+.toast.show{opacity:1;transform:translate(-50%,0) scale(1) rotate(0)}
+.toast:after{content:'';position:absolute;bottom:-12px;left:62px;width:21px;height:21px;background:#fff8cf;border-right:2px solid #242820;border-bottom:2px solid #242820;transform:skewY(12deg) rotate(45deg);border-bottom-right-radius:4px;box-shadow:3px 3px 0 #242820}
+.toast>.yellow-icon{background:#f7d431;border:2px solid #242820;border-radius:14px;transform:rotate(-7deg);width:48px;height:48px}
+.toast>strong{font-size:19px;font-weight:800;line-height:1.4;letter-spacing:-.35px;color:#242820}
+@media(max-width:640px){.toast{padding:16px;gap:12px;max-width:calc(100% - 32px)}.toast>strong{font-size:16px}.toast>.yellow-icon{width:42px;height:42px}.toast:after{left:42px}}
+@media(prefers-reduced-motion:reduce){.toast,.toast.show{transition:none;transform:translateX(-50%)}}
+
+/* Game-like handover: Leaflet positions the outer marker; only the inner car exits. */
+.leaflet-marker-icon.departing{transition:none}
+.departing .marker{animation:taxi-speed-away 1.45s both;transition:none;filter:none}
+.arriving.replacement .marker{animation:taxi-spawn .7s cubic-bezier(.16,1,.3,1) both,taxi-blink .5s .7s 3 ease-in-out;transform-origin:center}
+@keyframes taxi-speed-away{
+  0%{transform:translate(0,0) rotate(0);opacity:1}
+  6%,18%,30%{transform:translate(-3px,1px) rotate(-7deg)}
+  12%,24%,36%{transform:translate(3px,-1px) rotate(7deg)}
+  42%{transform:translate(0,0) rotate(0);opacity:1;animation-timing-function:cubic-bezier(.7,0,1,.5)}
+  99%{opacity:1}
+  100%{transform:translate(var(--escape-x),var(--escape-y)) rotate(0);opacity:0}
+}
+@keyframes taxi-spawn{
+  0%{transform:translateY(-28px) scale(.25);opacity:0}
+  65%{transform:translateY(2px) scale(1.12);opacity:1}
+  100%{transform:translateY(0) scale(1);opacity:1}
+}
+@keyframes taxi-blink{0%,100%{opacity:1}50%{opacity:.28}}
+@media(prefers-reduced-motion:reduce){
+  .departing .marker{animation:none;opacity:0;transform:none}
+  .arriving.replacement .marker{animation:none;opacity:1;transform:none}
+}
+
+/* Keep speech bubbles comfortably below the top of the map. */
+.map-panel .toast{top:170px}
+@media(max-width:640px){.map-panel .toast{top:125px}}
+
+/* Anchor handover messages to the taxi and clamp their position inside the map. */
+.map-panel .handover-toast{width:320px;max-width:calc(100% - 36px);padding:14px 16px;gap:12px;transform:translateY(-8px) scale(.94);transform-origin:50% 100%}
+.map-panel .handover-toast.show{transform:translateY(0) scale(1)}
+.handover-toast>strong{font-size:16px;line-height:1.35;letter-spacing:-.15px}
+.handover-toast>.yellow-icon{width:38px;height:38px;border-radius:11px}
+.handover-toast>.yellow-icon svg{width:23px;height:23px}
+.handover-toast:after{left:var(--tail-x,50%)}
+.handover-toast.bubble-below:after{top:-12px;bottom:auto;transform:rotate(225deg);box-shadow:none}
+@media(max-width:640px){.handover-toast>strong{font-size:14px}}
+@media(prefers-reduced-motion:reduce){.map-panel .handover-toast,.map-panel .handover-toast.show{transform:none;transition:none}}
+
+.destination-matches{margin-top:20px}.destination-matches h2{font-size:17px}.destination-matches button{display:flex;align-items:center;gap:10px;width:100%;text-align:left;background:#fff;border:1px solid #dedfd8;border-radius:10px;padding:12px;margin-top:8px;font-size:14px;line-height:1.5}.destination-matches button:hover{background:#fff9db}.destination-matches svg{flex-shrink:0}.destination-error{font-size:14px;color:#a52b20;line-height:1.5}.resolved-destination{font-size:14px;line-height:1.5;overflow-wrap:anywhere;background:#f6f7f3;padding:12px;border-radius:10px}.resolved-destination strong,.resolved-destination small{display:block}.resolved-destination small{margin-top:6px;color:#697060}button:disabled{opacity:.6;cursor:wait}
+
+/* One fade timing for message bubbles, the arrival dialog and its backdrop. */
+:root{--popup-fade-duration:550ms;--popup-fade-easing:cubic-bezier(.22,.61,.36,1)}
+.map-panel .toast,.map-panel .toast.show{transform:translateX(-50%);transition:opacity var(--popup-fade-duration) var(--popup-fade-easing);will-change:opacity}
+.map-panel .handover-toast,.map-panel .handover-toast.show{transform:none}
+[data-slot="dialog-content"][data-open],[data-slot="dialog-overlay"][data-open]{animation:popup-fade-in var(--popup-fade-duration) var(--popup-fade-easing) both}
+[data-slot="dialog-content"][data-closed],[data-slot="dialog-overlay"][data-closed]{animation:popup-fade-out var(--popup-fade-duration) var(--popup-fade-easing) both}
+@keyframes popup-fade-in{from{opacity:0}to{opacity:1}}
+@keyframes popup-fade-out{from{opacity:1}to{opacity:0}}
+@media(prefers-reduced-motion:reduce){.map-panel .toast{transition:none}[data-slot="dialog-content"],[data-slot="dialog-overlay"]{animation:none!important}}
+
+/* Light, understated speech bubbles, positioned beside the taxi. */
+.map-panel .toast{width:310px;max-width:calc(100% - 36px);padding:15px 18px;gap:12px;background:#fffef8;border:1px solid #202320;border-radius:16px;box-shadow:0 6px 20px #17201818;transition:opacity var(--popup-fade-duration) var(--popup-fade-easing);transform:none;will-change:opacity}
+.map-panel .toast.show{transform:none}
+.map-panel .toast>strong{font-size:16px;font-weight:600;line-height:1.45;letter-spacing:0}
+.map-panel .toast>.yellow-icon{width:36px;height:36px;background:#fff4bc;border:0;border-radius:10px;transform:none}
+.map-panel .toast>.yellow-icon svg{width:22px;height:22px;stroke-width:1.6}
+.map-panel .toast:after{width:14px;height:14px;bottom:-8px;left:var(--tail-x,50%);background:#fffef8;border-right:1px solid #202320;border-bottom:1px solid #202320;transform:rotate(45deg);border-bottom-right-radius:2px;box-shadow:none}
+.map-panel .toast.bubble-below:after{top:-8px;bottom:auto;transform:rotate(225deg)}
+.fare-dialog{border:1px solid #202320;border-radius:16px;box-shadow:0 12px 40px #17201820;--tw-ring-shadow:0 0 #0000}
+@media(max-width:640px){.map-panel .toast>strong{font-size:14px}}
+@media(prefers-reduced-motion:reduce){.map-panel .toast{transition:none}}
+
+.sound-toggle{display:flex;align-items:center;gap:7px;background:white;border:1px solid #d9ddd4;border-radius:9px;padding:9px 10px;font-size:13px;color:#30382b}.sound-toggle:hover{background:#fff9db}.sound-toggle[aria-pressed=false]{color:#777}@media(max-width:640px){header{gap:12px}.sound-toggle span{display:none}.sound-toggle{padding:8px}}
+
+/* Compact header and booking layout. */
+header{height:72px;padding:0 22px;gap:18px}
+.brand{display:flex;align-items:center;gap:12px;min-width:0}
+.brand-mark{display:block;width:62px;height:64px;object-fit:cover;object-position:50% 48%;border-radius:9px;flex-shrink:0}
+.brand-slogan{font-size:15px;line-height:1.35;font-weight:700;letter-spacing:.7px;color:#252b26}.slogan-break{display:none}
+main{grid-template-columns:350px minmax(0,1fr);min-height:calc(100svh - 72px)}
+aside{padding:24px 22px 16px;min-width:0}h1{font-size:32px;margin:0 0 12px;letter-spacing:-1px}.intro{margin:0 0 18px;line-height:1.5}
+.field{padding:11px 12px;margin-bottom:9px;gap:11px}.primary,.reset{padding:13px 16px;min-height:46px;margin-top:14px}
+.welcome{margin-top:22px;padding-top:18px;gap:12px}.ride-options,.ride-card{margin-top:18px}.ride-card{padding:14px}.driver{margin-top:14px}.car-icon{padding:10px}
+.ride-option{padding:11px;gap:10px;margin-top:8px}.locked-fare{margin-top:14px}.track{margin-top:14px}
+.footnote{padding-top:20px}.footnote p{line-height:1.5}.side-bottom{margin-top:16px;padding-top:12px}
+.map-panel{min-height:500px}.resolved-destination{padding:10px;margin:12px 0}.destination-matches{margin-top:14px}
+.sound-toggle{min-width:44px;min-height:44px;justify-content:center}.fare-dialog{max-height:calc(100dvh - 32px);overflow-y:auto}
+@media(max-width:900px){header{gap:12px;padding:0 16px}.demo{display:none}main{grid-template-columns:310px minmax(0,1fr)}aside{padding:20px 18px}.brand-slogan{font-size:14px}h1{font-size:29px}}
+@media(max-width:640px){
+ header{height:64px;padding:0 12px;gap:10px}.brand{gap:9px}.brand-mark{width:50px;height:56px}.brand-slogan{font-size:12px;letter-spacing:.55px}.slogan-break{display:block}.header-place{font-size:12px;gap:4px}.sound-toggle{margin-left:auto;flex-shrink:0}
+ main{min-height:calc(100svh - 64px)}.map-panel{height:clamp(240px,36svh,310px);min-height:240px;flex-shrink:0}
+ aside{padding:18px 16px 14px;border-right:0}h1{font-size:28px;margin-bottom:9px}.intro{font-size:15px;margin-bottom:14px;line-height:1.45}
+ .field{padding:9px 11px;margin-bottom:8px}.field input{font-size:16px}.primary,.reset{margin-top:10px;padding:12px 14px}
+ .welcome{margin-top:18px;padding-top:14px}.welcome p{margin:4px 0}.footnote{padding-top:16px}.ride-options h2{font-size:17px}.ride-option{padding:10px}.pickup-time{margin-top:5px}.offer-price{font-size:17px}
+ .map-tag{top:10px;left:10px;padding:8px 10px}.map-legend{bottom:12px;left:10px;padding:7px 9px;gap:12px}.recenter{bottom:92px}.demo-route-label{top:53px;left:10px;max-width:calc(100% - 60px);font-size:11px;padding:6px 8px}
+ .receipt-reopen{right:16px;bottom:16px}.fare-dialog{padding:20px!important}
+}
+@media(max-width:390px){.header-place{display:none}}
+
+/* Slightly larger header logo. */
+.brand-mark{width:72px;height:68px}
+@media(max-width:640px){.brand-mark{width:58px;height:60px}}
+
+/* Prominent logo with enough header space to show the full mark. */
+header{height:108px}
+.brand-mark{width:112px;height:100px;object-fit:cover}
+main{min-height:calc(100svh - 108px)}
+@media(max-width:640px){header{height:88px}.brand-mark{width:88px;height:80px}.brand{gap:8px}.header-place{display:none}main{min-height:calc(100svh - 88px)}}
+
+/* Larger gray brand slogan. */
+.brand-slogan{font-size:22px;color:#6b6b6b;letter-spacing:.2px}
+@media(max-width:900px){.brand-slogan{font-size:20px}}
+@media(max-width:640px){.brand-slogan{font-size:17px}}
+
+.brand-mark{object-fit:contain;object-position:center}
+
+.brand-slogan{font-size:25px}
+@media(max-width:900px){.brand-slogan{font-size:22px}}
+@media(max-width:640px){.brand-slogan{font-size:19px}}
+
+.intro:empty{display:none}
